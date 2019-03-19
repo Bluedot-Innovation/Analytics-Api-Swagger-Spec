@@ -219,7 +219,8 @@ definitions:
         enum:
           - day
           - month
-        description: 'Enum: month, year, day'
+          - year
+        description: 'Enum: day, month, year'
       format:
         type: string
         enum:
