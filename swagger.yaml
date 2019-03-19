@@ -229,7 +229,6 @@ definitions:
       count:
         type: boolean
         description: 'Return details or count. Default: false'
-        
 x-suppress:
   # workaround to surpress unnecessary warning
   # https://github.com/swagger-api/swagger-editor/issues/765
