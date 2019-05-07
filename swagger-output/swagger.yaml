@@ -126,7 +126,7 @@ paths:
         - publicapi-custom-authorizer: []
       x-amazon-apigateway-integration:
         type: aws
-        uri: arn:aws:apigateway:ap-southeast-2:lambda:path/2015-03-31/functions/arn:aws:lambda:ap-southeast-2:765928207118:function:${stageVariables.CheckInsLambdaFunctionName}/invocations
+        uri: arn:aws:apigateway:ap-southeast-2:lambda:path/2015-03-31/functions/arn:aws:lambda:ap-southeast-2:##AWS_ACCOUNT_NUMBER##:function:${stageVariables.CheckInsLambdaFunctionName}/invocations
         httpMethod: POST
         requestTemplates:
           application/json: '{
