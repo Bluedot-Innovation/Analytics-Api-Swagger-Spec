@@ -186,6 +186,7 @@ definitions:
       
   CheckInRequest:
     type: object
+    description: The list of checkins in json or csv format. By default, the format is json.
     properties:
       projectId:
         description: Only one type of ID is allowed per request
