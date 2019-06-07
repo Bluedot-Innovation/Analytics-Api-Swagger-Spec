@@ -82,12 +82,17 @@ paths:
       - application/json
       - text/csv
       parameters:
-      - in: body
-        name: body
-        description: Checkin request
-        required: true
-        schema: 
-          $ref: '#/definitions/CheckInRequest'      
+        - in: header
+          name: Authorization
+          description: 'Bearer Token. Format: `Bearer <accessToken>`'
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: Checkin request
+          required: true
+          schema: 
+            $ref: '#/definitions/CheckInRequest'      
       responses:
         200:
           description: successful operation
